@@ -8,6 +8,7 @@ import lombok.ToString;
 
 import java.util.UUID;
 
+// 엔티티 객체는 해당 DB와 1 대 1 로 대응되게 만들어야.
 @Setter @Getter @ToString
 @AllArgsConstructor
 public class UserEntity {
@@ -16,6 +17,7 @@ public class UserEntity {
     private String username;
     private String email;
     private String password;
+    private String profileImg;
 
     public UserEntity() {
         this.id = UUID.randomUUID().toString();
